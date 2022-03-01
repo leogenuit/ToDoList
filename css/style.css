@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 body, html {
-  background: rgb(238, 237, 237);
+  background: #fff;
 }
 
 .container {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 .container > div {
-  background: lightblue;
+  background: RGB(129, 157, 212);
   margin: 30px 0;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
 }
 
 div.add-task {
