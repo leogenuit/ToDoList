@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To do list</title>
-</head>
-<body>
+<?php
+var_dump($_POST["title"]);
 
-</body>
-</html>
+$data = [];
+
+if(isset($_POST['add'])) {
+  array_unshift($data, $_POST['title']);
+}
+var_dump($data);
+
+require_once('app.php');
