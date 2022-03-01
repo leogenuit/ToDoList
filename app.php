@@ -9,9 +9,15 @@
 </head>
 <body>
   <div class="container">
+    <div class="add-task">
+      <form action="index.php" method="post">
+        <input type="text" name="title">
+        <button name="add" type="submit">Add new Task</button>
+      </form>
+    </div>
     <?php
     foreach($data as $val){?>
-      <div id="1">
+      <div class="valeur">
         <p> <?php echo $val; ?> </p>
         <div>
           <input type="checkbox">
@@ -22,12 +28,6 @@
     }
     ?>
 
-    <div class="add-task">
-      <form action="index.php" method="post">
-        <input type="text" name="title">
-        <button name="add" type="submit">Add new Task</button>
-      </form>
-    </div>
   </div>
 </body>
 </html>
