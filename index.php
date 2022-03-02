@@ -1,11 +1,8 @@
 <?php
 require_once('db.php');
-var_dump($_POST["title"]);
-
 $data = [];
 
 if (isset($_POST['add'])) {
-  // array_unshift($data, $_POST['title']);
   $checkbox;
   if($_POST['fait'] === 'on') {
     $checkbox = 1;
@@ -18,6 +15,15 @@ if (isset($_POST['add'])) {
       'fait' => $checkbox
     ]);
 }
-var_dump($data);
-// lalalalal
+
+$req_all_to_do = $db->prepare("SELECT * FROM to_do");
+$req_all_to_do->execute();
+
+$all_to_do = $req_all_to_do->fetchAll();
+
+
+foreach($all_to_do as $all_to) {
+  $data[]= $all_to["title"];
+
+}
 require_once('app.php');
