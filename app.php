@@ -12,7 +12,7 @@
     <div class="add-task">
       <form action="index.php" method="post">
         <input type="text" name="title">
-        <input type="checkbox" name="fait">
+        <input type="checkbox" name="fais">
         <button name="add" type="submit">Add new Task</button>
       </form>
     </div>
