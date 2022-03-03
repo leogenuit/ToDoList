@@ -22,7 +22,9 @@
       <div class="valeur">
         <p> <?php echo $val; ?> </p>
         <div>
-          <button>x</button>
+          <form action="index.php" method="post">
+            <button name="delete" type="submit">x</button>
+          </form>
         </div>
       </div>
     <?php
