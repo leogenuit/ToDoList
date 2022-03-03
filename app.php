@@ -22,7 +22,6 @@
       <div class="valeur">
         <p> <?php echo $val; ?> </p>
         <div>
-          <input type="checkbox">
           <button>x</button>
         </div>
       </div>

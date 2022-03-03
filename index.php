@@ -3,7 +3,7 @@ require_once('db.php');
 $data = [];
 
 if (isset($_POST['add'])) {
-  $addContent = $db->prepare("INSERT INTO to_do(title, fait) VALUE(:title)");
+  $addContent = $db->prepare("INSERT INTO to_do(title) VALUE(:title)");
   $addContent->execute(['title' => $_POST['title']]);
 }
 
