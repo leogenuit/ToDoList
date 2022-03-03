@@ -11,8 +11,8 @@
   <div class="container">
     <div class="add-task">
       <form action="index.php" method="post">
-        <input type="text" name="title'>
-        <input type="checkbox" name="fais">
+        <input type="text" name="title">
+        <input type="checkbox" name="fait">
         <button name="add" type="submit">Add new Task</button>
       </form>
     </div>
