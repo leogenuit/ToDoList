@@ -18,11 +18,12 @@
       </form>
     </div>
     <?php
-    foreach ($data as $key => $val) { ?>
+    foreach ($data as $id => $val) { ?>
       <div class="valeur">
-        <p id=<?= $key ?>> <?php echo $val; ?> </p>
+        <p> <?php echo $val; ?> </p>
         <div>
           <form action="index.php" method="post">
+            <input type="hidden" value=<?=$id?> name="id">
             <button name="delete" type="submit">x</button>
           </form>
         </div>
