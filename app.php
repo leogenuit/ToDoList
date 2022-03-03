@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,17 @@
   <title>To do list</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="container">
     <div class="add-task">
       <form action="index.php" method="post">
         <input type="text" name="title">
-        <input type="checkbox" name="fait">
         <button name="add" type="submit">Add new Task</button>
       </form>
     </div>
     <?php
-    foreach($data as $val){?>
+    foreach ($data as $val) { ?>
       <div class="valeur">
         <p> <?php echo $val; ?> </p>
         <div>
@@ -31,4 +32,5 @@
 
   </div>
 </body>
+
 </html>
