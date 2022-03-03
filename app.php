@@ -18,9 +18,9 @@
       </form>
     </div>
     <?php
-    foreach ($data as $val) { ?>
+    foreach ($data as $key => $val) { ?>
       <div class="valeur">
-        <p> <?php echo $val; ?> </p>
+        <p id=<?= $key ?>> <?php echo $val; ?> </p>
         <div>
           <form action="index.php" method="post">
             <button name="delete" type="submit">x</button>
